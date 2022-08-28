@@ -1,0 +1,165 @@
+:root {
+  --type-normal: #a8aa77;
+  --type-fire: #f64631;
+  --type-water: #1d8cea;
+  --type-grass: #6bc762;
+  --type-flying: #98a4e0;
+  --type-fighting: #c13129;
+  --type-poison: #ba5a9e;
+  --type-electric: #fdc547;
+  --type-ground: #e9d5a7;
+  --type-rock: #bea563;
+  --type-psychic: #fd6fa1;
+  --type-ice: #47cee4;
+  --type-bug: #a0b23f;
+  --type-ghost: #6762b2;
+  --type-steel: #a8a6bb;
+  --type-dragon: #8567ed;
+  --type-dark: #765a4e;
+  --type-fairy: #fdb6f2;
+
+  --primary-default: #d5d5d5;
+  --primary-clearer: #ffffff;
+  --primary-darker: #aaaaaa;
+
+  --secondary-default: #06404f;
+  --secondary-clearer: #085063;
+  --secondary-darker: #05333f;
+
+  --danger: #bb2124;
+  --success: #22bb33;
+  --dark: #222222;
+
+  .normal {
+    background: var(--type-normal);
+  }
+
+  .fire {
+    background: var(--type-fire);
+  }
+
+  .water {
+    background: var(--type-water);
+  }
+
+  .grass {
+    background: var(--type-grass);
+  }
+
+  .flying {
+    background: var(--type-flying);
+  }
+
+  .fighting {
+    background: var(--type-fighting);
+  }
+
+  .poison {
+    background: var(--type-poison);
+  }
+
+  .electric {
+    background: var(--type-electric);
+  }
+
+  .ground {
+    background: var(--type-ground);
+  }
+
+  .rock {
+    background: var(--type-rock);
+  }
+
+  .psychic {
+    background: var(--type-psychic);
+  }
+
+  .ice {
+    background: var(--type-ice);
+  }
+
+  .bug {
+    background: var(--type-bug);
+  }
+
+  .ghost {
+    background: var(--type-ghost);
+  }
+
+  .steel {
+    background: var(--type-steel);
+  }
+
+  .dragon {
+    background: var(--type-dragon);
+  }
+  .dark {
+    background: var(--type-dark);
+  }
+
+  .fairy {
+    background: var(--type-fairy);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root,
+  .App {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .App {
+    overflow: auto;
+    display: grid;
+    grid-template-areas:
+      'header'
+      'main'
+      'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  body {
+    background: var(--primary-default);
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1080px) {
+    html {
+      font-size: 93.75%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 87.5%;
+    }
+  }
+}

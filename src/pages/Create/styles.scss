@@ -1,0 +1,104 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    background: var(--secondary-clearer);
+    color: var(--primary-clearer);
+    border: 0;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 120%;
+    margin-left: 1rem;
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--primary-darker);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+
+    img {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    h2 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 110%;
+      color: var(--primary-clearer);
+      margin-bottom: 1rem;
+    }
+
+    input {
+      width: 30rem;
+      height: 2.8rem;
+      padding: 1.2rem;
+      border-radius: 1rem;
+      border: none;
+      margin-bottom: 1rem;
+
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+
+      &:focus {
+        outline: none;
+        filter: brightness(0.9);
+      }
+
+      &::placeholder {
+        color: var(--primary-darker);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 100%;
+      }
+    }
+
+    .types-container {
+      display: flex;
+      p {
+        margin-left: 1rem;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.8rem;
+        line-height: 150%;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: var(--primary-clearer);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    form {
+      input {
+        width: 12rem;
+      }
+    }
+  }
+}

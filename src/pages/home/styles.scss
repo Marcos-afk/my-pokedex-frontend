@@ -1,0 +1,185 @@
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .card-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: var(--primary-clearer);
+      border-radius: 0.625rem;
+      padding: 1rem 2rem;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-width: 50%;
+        height: auto;
+      }
+
+      .options-card {
+        margin-left: 5rem;
+        button {
+          margin-left: 0.2rem;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .pokemon-data {
+        text-align: center;
+        margin-bottom: 1rem;
+        p {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 0.875rem;
+          color: var(--primary-darker);
+        }
+
+        h6 {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1.3rem;
+          line-height: 120%;
+        }
+      }
+
+      .btn-section {
+        .btn {
+          cursor: auto;
+          padding: 0.3rem 0.8rem;
+          border: 0;
+          border-radius: 0.5rem;
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 0.8rem;
+          line-height: 150%;
+          margin-bottom: 1rem;
+        }
+
+        &:last-child .btn {
+          margin-left: 0.5rem;
+        }
+      }
+
+      transition: filter 0.2s;
+
+      &:hover {
+        cursor: pointer;
+        filter: brightness(0.9);
+      }
+    }
+  }
+
+  .header-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .search-bar {
+      display: flex;
+
+      input[type='text'] {
+        width: 30rem;
+        height: 2.8rem;
+        padding: 1.2rem;
+        border-radius: 1rem;
+        border: none;
+
+        transition: filter 0.2s;
+
+        &:hover {
+          filter: brightness(0.9);
+        }
+
+        &:focus {
+          outline: none;
+          filter: brightness(0.9);
+        }
+
+        &::placeholder {
+          color: var(--primary-darker);
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 100%;
+        }
+      }
+    }
+
+    .button-action {
+      a {
+        color: var(--primary-default);
+      }
+      button {
+        width: 10rem;
+        height: 2.8rem;
+        border-radius: 1rem;
+        margin-left: 1rem;
+        border: 0;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 120%;
+        background: var(--secondary-clearer);
+
+        transition: filter 0.2s;
+
+        &:hover {
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header-actions {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+
+      .search-bar {
+        input[type='text'] {
+          width: 15rem;
+          height: 2.8rem;
+          padding: 1.2rem;
+          border: none;
+        }
+      }
+
+      .button-action {
+        margin-top: 1rem;
+        button {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .card-items {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1rem;
+
+      .card {
+        &:last-child {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+header {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-default);
+    height: 3rem;
+
+    a {
+      color: var(--primary-default);
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2.125rem;
+      line-height: 110%;
+    }
+  }
+}
