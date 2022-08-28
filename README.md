@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Adição </h1>
 	<img src="public/assets/exec-01.gif" width="700" alt="exec-01"/>
-  <h1>Edição</h1>
+  <h1>Edição | Busca específica</h1>
   <img src="public/assets/exec-02.gif" width="700" alt="exec-02"/>
   <h1>Exclusão</h1>
   <img src="public/assets/exec-03.gif" width="700" alt="exec-03"/>
